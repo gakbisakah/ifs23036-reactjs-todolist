@@ -1,7 +1,8 @@
 import apiHelper from "../../../helpers/apiHelper";
+import api from "./axios";
 
 const authApi = (() => {
-  const BASE_URL = `${DELCOM_BASEURL}/auth`;
+  const BASE_URL = "/auth";
 
   function _url(path) {
     return BASE_URL + path;
